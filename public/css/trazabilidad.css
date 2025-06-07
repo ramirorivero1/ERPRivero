@@ -1,0 +1,52 @@
+.remitos-container {
+    /* Ahora ocupa hasta el 95% del ancho de la pantalla, con un máximo de 1400px */
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.remitos-container h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #007BFF;
+}
+
+.remitos-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.remitos-table th,
+.remitos-table td {
+    padding: 12px 70px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.remitos-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    color: #333;
+}
+
+.remitos-table tr {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.remitos-table tr:hover {
+    background-color: #a1c8f1;
+}
+
+.remitos-table td {
+    color: #555;
+}
+
+/* Mantiene la paginación centrada debajo de la tabla */
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

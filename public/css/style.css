@@ -1,0 +1,160 @@
+/* Reinicio básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8383cc;
+}
+.navbar {
+    position: static;
+    width: 100%;              /* ← fuerza ancho completo */
+    height: 60px;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    /* Sombra más realista */
+    box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.08),
+      0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* Espacio debajo del navbar */
+main.main-content {
+    flex: 1; /* Hace que ocupe el espacio restante */
+    margin-top: 0;
+    padding: 40px 20px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Contenedor de enlaces de navegación */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    height: 100%;
+}
+
+/* Enlaces de navegación */
+.nav-links a {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ffdddd;
+    color: #c0392b;
+}
+/* Botones sociales fijos */
+.social-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;              /* los alejamos un poco de la esquina */
+    display: flex;            /* fila en lugar de columna */
+    flex-direction: row;
+    gap: 12px;
+    z-index: 1000;
+  }
+  
+  .social-buttons a img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    transition: transform 0.2s;
+  }
+  
+  .social-buttons a:hover img {
+    transform: scale(1.1);
+  }
+  
+/* Botón "Sacar Turno" */
+.btn-turno {
+    display: flex;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 0 20px;
+    height: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    border-left: 1px solid #ddd;
+    margin-right: -28px; /* Acerca al borde derecho */
+    transition: background-color 0.3s ease;
+}
+
+.btn-turno:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor de botones de autenticación (login/registro) */
+.nav-auth {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+}
+
+/* Estilo para botones de Login y Registro */
+.btn-auth {
+    display: flex;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 0 20px;
+    height: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-auth:hover {
+    background-color: #0056b3;
+}
+
+/* Testimonios */
+.testimonios-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+    color: #333;
+}
+
+.testimonios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.testimonio {
+    background: #f8f8f8;
+    padding: 15px 20px;
+    border-left: 5px solid #007BFF;
+    border-radius: 5px;
+}
+

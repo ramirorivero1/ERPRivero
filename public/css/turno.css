@@ -1,0 +1,170 @@
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 550px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.btn-link {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-link:hover {
+    background-color: #0056b3;
+}
+
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+/* Contenedor de botones de autenticación (Login / Register) */
+.nav-auth {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+}
+
+/* Estilo compartido para botones de la derecha */
+.nav-auth .btn-turno {
+    border-left: none; /* Opcional, evita líneas entre botones */
+    margin-right: 0;   /* Corrige desplazamiento hacia la derecha */
+}
+/* Aviso de login/register */
+.alert-info {
+    background: #e7f3ff;
+    border: 1px solid #b3d8ff;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #004a9f;
+}
+.alert-info .alert-link {
+    font-weight: bold;
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Pistas bajo inputs */
+.hint {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+/* turno.css (añádelo al final) */
+
+/* Estilos para el select de preferencia de turno */
+#horario {
+    width: 100%;
+    max-width: 600px;         /* igual que tus inputs */
+    padding: 10px 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    appearance: none;         /* quita flecha nativa */
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'10'%20height%3D'6'%20viewBox%3D'0%200%2010%206'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M0%200l5%206%205-6z'%20fill%3D'%23777'%20/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+#horario:hover {
+    border-color: #007BFF;
+}
+
+#horario:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.25);
+}
+
+#horario option {
+    padding: 8px;
+    font-size: 15px;
+}
+
+
+/* Botón deshabilitado */
+.btn-disabled {
+    background-color: #007BFF;
+    cursor: not-allowed;
+}
+
+/* Botones de enlace */
+.btn-link {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+.btn-link:hover {
+    background-color: #0056b3;
+}
+
+/* Contacto 24 hs */
+.contacto-24hs {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    font-size: 14px;
+}
+.contacto-24hs a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.contacto-24hs a:hover {
+    text-decoration: underline;
+}
